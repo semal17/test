@@ -1,0 +1,132 @@
+.format {
+  background-image: url("../images/bgf@1x.png");
+  background-position: 50% 50%;
+  background-size: cover;
+  @media (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
+    background-image: url("../images/bgf2@2x.png");
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding-top: 30px;
+    padding-bottom: 15px;
+  }
+
+  &__span {
+    color: $blue;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 16px;
+    color: #bbbbbb;
+    text-align: center;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    width: 50%;
+    padding-top: 20px;
+  }
+
+  &__block {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background: $blue;
+    border: 5px solid $hardblue;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  &__block:hover {
+    opacity: 0.5;
+  }
+
+  &__img {
+    margin: 0 auto;
+    fill: white;
+  }
+
+  &__caption {
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    width: 85%;
+    margin: 0 auto;
+    padding-top: 5px;
+  }
+}
+
+@media (min-width: 620px) {
+  .format {
+    &__title {
+      font-size: 36px;
+      line-height: 43px;
+      padding-top: 50px;
+      padding-bottom: 30px;
+    }
+    &__text {
+      font-size: 18px;
+      line-height: 22px;
+    }
+
+    &__item {
+      padding-top: 30px;
+    }
+
+    &__caption {
+      font-size: 16px;
+      line-height: 19px;
+      width: 188px;
+    }
+  }
+}
+
+@media (min-width: 1190px) {
+  .format {
+    &__title {
+      padding-top: 120px;
+    }
+    &__list {
+      padding-top: 80px;
+    }
+    &__item {
+      position: relative;
+      width: 20%;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+    }
+    &__circle-main {
+      position: absolute;
+      top: 75px;
+      left: -48px;
+      width: 98px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__circle {
+      display: block;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #c4c4c4;
+    }
+
+    &__caption {
+      padding-top: 20px;
+    }
+  }
+}
